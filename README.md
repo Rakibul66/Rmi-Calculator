@@ -1,29 +1,30 @@
 # Rmi-Calculator
 Simple java rmi calculator with client server 
-Compilation and Running Instructions
-Compiling the code
-Use javac to compile all 4 programs.
- > javac Calculator.java
- > javac CalculatorImpl.java
- > javac CalculatorServer.java
+Compilation and Running Instructions:<br/>
+Compiling the code:<br/>
+Use javac to compile all 4 programs.<br/>
+ > javac Calculator.java<br/>
+ > javac CalculatorImpl.java<br/>
+ > javac CalculatorServer.java<br/>
  > javac CalculatorClient.java
- 
- Now use rmic to create the stub and skeleton class files.
+ <br/>
+ Now use rmic to create the stub and skeleton class files.<br/>
  > rmic CalculatorImpl
+ <br/>
 Running the RMI System
-
+<br/>
 Start with the Registry. You must be in the directory that contains the classes you have written. From there, enter the following:
-
+<br/>
  > rmiregistry
 If all goes well, the registry will start running and you can switch to the next console.
 
 In the second console start the server hosting the CalculatorService, and enter the following:
-
+<br/>
  > java CalculatorServer
 It will start, load the implementation into memory and wait for a client connection.
 
 In the last console, start the client program.
-
+<br/>
  > java CalculatorClient
 If all goes well you will see the following output:
 
